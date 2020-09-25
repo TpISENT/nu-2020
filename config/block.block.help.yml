@@ -1,0 +1,29 @@
+uuid: 30131440-61b8-4fa3-9750-7831b731a9e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - help
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: help
+theme: tp_basetheme
+region: help
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

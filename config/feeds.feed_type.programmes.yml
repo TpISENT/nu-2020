@@ -1,0 +1,115 @@
+uuid: 50aaa0ba-3037-4183-ac50-ea64e50607a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.programme.body
+    - field.field.node.programme.field_education_level
+    - field.field.node.programme.field_navigation
+    - field.field.node.programme.field_school
+    - field.field.node.programme.field_seo_description
+    - node.type.programme
+  module:
+    - node
+id: programmes
+label: Programmes
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: en
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: programme
+custom_sources:
+  programme_name:
+    label: 'Programme Name'
+    value: 'Programme Name'
+    machine_name: programme_name
+  programme_level:
+    label: 'Programme Level'
+    value: 'Programme Level'
+    machine_name: programme_level
+  programme_school:
+    label: 'Programme School'
+    value: 'Programme School'
+    machine_name: programme_school
+  seo_description:
+    label: 'SEO Description'
+    value: 'SEO Description'
+    machine_name: seo_description
+  navigation:
+    label: Navigation
+    value: Navigation
+    machine_name: navigation
+  description:
+    label: Description
+    value: Description
+    machine_name: description
+  description_summary:
+    label: 'Description Summary'
+    value: 'Description Summary'
+    machine_name: description_summary
+mappings:
+  -
+    target: field_school
+    map:
+      target_id: programme_school
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: field_seo_description
+    map:
+      value: seo_description
+    settings:
+      language: null
+  -
+    target: title
+    map:
+      value: programme_name
+    unique:
+      value: '1'
+    settings:
+      language: null
+  -
+    target: field_education_level
+    map:
+      target_id: programme_level
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_navigation
+    map:
+      target_id: navigation
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: body
+    map:
+      value: description
+      summary: description_summary
+    settings:
+      language: null
+      format: plain_text

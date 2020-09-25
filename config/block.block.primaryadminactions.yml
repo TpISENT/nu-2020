@@ -1,0 +1,28 @@
+uuid: ee15156f-7af5-4567-aa88-f6c8d6d724e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: primaryadminactions
+theme: tp_basetheme
+region: help
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

@@ -1,0 +1,21 @@
+uuid: f7994f8e-0185-4a13-8a27-588ed99a5081
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract_summary
+    - node.type.forms_and_publications
+  module:
+    - text
+id: node.forms_and_publications.field_abstract_summary
+field_name: field_abstract_summary
+entity_type: node
+bundle: forms_and_publications
+label: Abstract/Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

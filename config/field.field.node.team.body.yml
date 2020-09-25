@@ -1,0 +1,27 @@
+uuid: 0aa48c82-c792-4bbe-9f6f-ace44a8d6567
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.team
+  module:
+    - text
+id: node.team.body
+field_name: body
+entity_type: node
+bundle: team
+label: Body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<p>This is a holding page, we are still writing content for certain sections of the site. Please accept our apologies if you see this page, we are working hard to develop content for the site and occasionally have to publish 'holding pages' like this while we test the new structure or add new sections. Please re-visit in a couple of days time. Thank you</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

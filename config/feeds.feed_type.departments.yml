@@ -1,0 +1,113 @@
+uuid: 5cea81bf-5aff-4dcd-957d-b4862abd5bee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.department.field_author
+    - field.field.node.department.field_navigation
+    - field.field.node.department.field_school
+    - field.field.node.department.field_seo_description
+    - node.type.department
+  module:
+    - node
+id: departments
+label: Departments
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: en
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: department
+custom_sources:
+  campus:
+    label: Campus
+    value: Campus
+    machine_name: campus
+  hod:
+    label: HOD
+    value: HOD
+    machine_name: hod
+  navigation:
+    label: Navigation
+    value: Navigation
+    machine_name: navigation
+  seo_description:
+    label: 'SEO Description'
+    value: 'SEO Description'
+    machine_name: seo_description
+  school:
+    label: School
+    value: School
+    machine_name: school
+  title:
+    label: Title
+    value: Title
+    machine_name: title
+  department_type:
+    label: 'Department Type'
+    value: 'Department Type'
+    machine_name: department_type
+mappings:
+  -
+    target: field_author
+    map:
+      target_id: hod
+    settings:
+      language: null
+      reference_by: title
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_navigation
+    map:
+      target_id: navigation
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: field_seo_description
+    map:
+      value: seo_description
+    settings:
+      language: null
+  -
+    target: field_school
+    map:
+      target_id: school
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: title
+    map:
+      value: title
+    unique:
+      value: '1'
+    settings:
+      language: null
+  -
+    target: field_department_type
+    map:
+      value: department_type
+    settings:
+      language: null

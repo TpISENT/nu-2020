@@ -1,0 +1,36 @@
+uuid: b66e2078-3073-472e-8364-c0bbed6f4733
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_document_type
+field_name: field_document_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Form
+      label: Form
+    -
+      value: Research
+      label: Research
+    -
+      value: 'Research Paper'
+      label: 'Research Paper'
+    -
+      value: 'Case Study'
+      label: 'Case Study'
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

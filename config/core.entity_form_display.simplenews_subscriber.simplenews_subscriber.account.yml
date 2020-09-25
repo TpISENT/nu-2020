@@ -1,0 +1,17 @@
+uuid: b9bbb38b-7418-41ec-b040-1b7740b35a71
+langcode: und
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.simplenews_subscriber.account
+    - field.field.simplenews_subscriber.simplenews_subscriber.subscriptions
+  module:
+    - simplenews
+id: simplenews_subscriber.simplenews_subscriber.account
+targetEntityType: simplenews_subscriber
+bundle: simplenews_subscriber
+mode: account
+content: {  }
+hidden:
+  mail: true
+  uid: true

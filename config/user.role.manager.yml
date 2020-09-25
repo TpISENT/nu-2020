@@ -1,0 +1,14 @@
+uuid: 53dafc1f-cc95-4d20-bf7e-272b06143e7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: manager
+label: Manager
+weight: -5
+is_admin: null
+permissions: {  }

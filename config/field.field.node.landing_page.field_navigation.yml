@@ -1,0 +1,29 @@
+uuid: c94f6455-42d4-42e9-86b6-88091370a52b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navigation
+    - node.type.landing_page
+    - taxonomy.vocabulary.navigation
+id: node.landing_page.field_navigation
+field_name: field_navigation
+entity_type: node
+bundle: landing_page
+label: Navigation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      navigation: navigation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

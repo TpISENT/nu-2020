@@ -1,0 +1,8 @@
+uuid: 34b7134f-5e31-48ee-9c43-6de45009608f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Faculty and Staff Type'
+vid: faculty_and_staff_type
+description: ''
+weight: 0

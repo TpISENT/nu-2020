@@ -1,0 +1,51 @@
+uuid: 4ff94423-4e22-479f-973a-0bdbb9794e79
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.programme.body
+    - field.field.node.programme.feeds_item
+    - field.field.node.programme.field_author
+    - field.field.node.programme.field_campus
+    - field.field.node.programme.field_document
+    - field.field.node.programme.field_education_level
+    - field.field.node.programme.field_image
+    - field.field.node.programme.field_meta_tags
+    - field.field.node.programme.field_navigation
+    - field.field.node.programme.field_school
+    - field.field.node.programme.field_seo_description
+    - node.type.programme
+  module:
+    - text
+    - user
+id: node.programme.teaser
+targetEntityType: node
+bundle: programme
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  feeds_item: true
+  field_author: true
+  field_campus: true
+  field_document: true
+  field_education_level: true
+  field_image: true
+  field_meta_tags: true
+  field_navigation: true
+  field_school: true
+  field_seo_description: true

@@ -1,0 +1,11 @@
+uuid: ff469c11-e401-4394-8aff-4e5805fbfa1b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Newsletter Issue'
+type: simplenews_issue
+description: 'Use <em>Newsletter Issue</em> for newsletters.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

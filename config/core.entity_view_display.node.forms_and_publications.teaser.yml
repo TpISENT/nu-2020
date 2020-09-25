@@ -1,0 +1,44 @@
+uuid: 87d0f650-665c-4fc8-a3f1-42cf2250c5fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forms_and_publications.body
+    - field.field.node.forms_and_publications.field_abstract_summary
+    - field.field.node.forms_and_publications.field_author
+    - field.field.node.forms_and_publications.field_document
+    - field.field.node.forms_and_publications.field_document_type
+    - field.field.node.forms_and_publications.field_meta_tags
+    - field.field.node.forms_and_publications.field_navigation
+    - field.field.node.forms_and_publications.field_seo_description
+    - node.type.forms_and_publications
+  module:
+    - text
+    - user
+id: node.forms_and_publications.teaser
+targetEntityType: node
+bundle: forms_and_publications
+mode: teaser
+content:
+  field_abstract_summary:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_author: true
+  field_document: true
+  field_document_type: true
+  field_meta_tags: true
+  field_navigation: true
+  field_seo_description: true

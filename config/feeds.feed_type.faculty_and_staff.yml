@@ -1,0 +1,36 @@
+uuid: 2c7caf27-ede3-4479-8cf4-bce069b68980
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.team
+  module:
+    - node
+id: faculty_and_staff
+label: 'Faculty and Staff'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: en
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: team
+custom_sources: {  }
+mappings: {  }

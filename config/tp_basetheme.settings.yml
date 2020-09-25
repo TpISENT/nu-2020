@@ -1,0 +1,34 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://nu-transp-white-logo.png'
+favicon:
+  use_default: 0
+  path: 'public://njala-transparent-logo.png'
+  mimetype: image/png
+theme_skin: ''
+enable_customize: '0'
+map_source: mapbox
+map_center_latitude: ''
+map_center_longitude: ''
+map_zoom: '13'
+mapbox_access_token: ''
+mapbox_id_style: mapbox.light
+google_key: ''
+google_map_style: ''
+listing_search_action: 'Apply Only'
+sticky_menu: '1'
+site_layout: boxed
+preloader: '0'
+default_header: header
+hide_header_button_link: hide
+header_button_link: 'https://app.njala.edu.sl'
+footer_first_size: '3'
+footer_second_size: '3'
+footer_third_size: '3'
+footer_four_size: '3'
+customize_css: ''

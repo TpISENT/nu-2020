@@ -1,0 +1,14 @@
+uuid: 632ecf76-6694-4235-bd8b-85a03451d514
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    internal: true
+id: comment.token
+label: Token
+targetEntityType: comment
+cache: true

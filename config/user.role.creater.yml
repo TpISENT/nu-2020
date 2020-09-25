@@ -1,0 +1,14 @@
+uuid: db3f56ab-62b0-44fe-bd43-831e61be5712
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: creater
+label: Creater
+weight: -8
+is_admin: null
+permissions: {  }

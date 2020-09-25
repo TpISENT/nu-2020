@@ -1,0 +1,14 @@
+uuid: 74070830-441d-4fc5-aec4-864ddf77340b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: reviewer
+label: Reviewer
+weight: -7
+is_admin: null
+permissions: {  }

@@ -1,0 +1,28 @@
+uuid: d5018ba7-ec11-4a04-876f-9d455fc0044a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programmes
+    - node.type.department
+    - node.type.programme
+id: node.department.field_programmes
+field_name: field_programmes
+entity_type: node
+bundle: department
+label: Programmes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      programme: programme
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

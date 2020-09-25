@@ -1,0 +1,31 @@
+uuid: e9e97ad7-7580-4f6c-b0be-4cb808af6d5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+    region: content
+hidden:
+  field_user_bio: true
+  field_user_fullname: true
+  member_for: true
+  name: true
+  simplenews: true

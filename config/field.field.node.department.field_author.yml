@@ -1,0 +1,25 @@
+uuid: 4d4875bb-9e13-417e-8b42-99f30d465e27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.department
+id: node.department.field_author
+field_name: field_author
+entity_type: node
+bundle: department
+label: HOD
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference_views
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

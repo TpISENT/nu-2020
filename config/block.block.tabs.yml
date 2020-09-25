@@ -1,0 +1,30 @@
+uuid: 44d1691e-f087-429d-b5d0-2698f123485f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: tabs
+theme: tp_basetheme
+region: help
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

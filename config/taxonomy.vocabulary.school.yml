@@ -1,0 +1,8 @@
+uuid: 987a5738-d5b4-4a3e-944a-e9ac315c5e71
+langcode: en
+status: true
+dependencies: {  }
+name: School
+vid: school
+description: ''
+weight: 0

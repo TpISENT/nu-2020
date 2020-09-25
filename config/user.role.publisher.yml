@@ -1,0 +1,14 @@
+uuid: b06e7be5-fc4d-426c-bc2d-d9b78797cc11
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: publisher
+label: Publisher
+weight: -6
+is_admin: null
+permissions: {  }

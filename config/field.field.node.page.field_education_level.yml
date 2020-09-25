@@ -1,0 +1,29 @@
+uuid: adde1c93-65e8-4270-b52e-89ff52b0ec9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_education_level
+    - node.type.page
+    - taxonomy.vocabulary.education_level
+id: node.page.field_education_level
+field_name: field_education_level
+entity_type: node
+bundle: page
+label: 'Education Level'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      education_level: education_level
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

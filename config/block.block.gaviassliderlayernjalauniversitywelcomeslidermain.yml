@@ -1,0 +1,34 @@
+uuid: ddfb5636-90c3-4b18-b646-2969923ce8aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gavias_sliderlayer
+    - gaviasthemer
+    - system
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gaviassliderlayernjalauniversitywelcomeslidermain
+theme: tp_basetheme
+region: slideshow_content
+weight: 0
+provider: null
+plugin: 'gavias_sliderlayer_block:gavias_sliderlayer_block____1'
+settings:
+  id: 'gavias_sliderlayer_block:gavias_sliderlayer_block____1'
+  label: 'Gavias SliderLayer - Njala University Welcome - Slider Main'
+  provider: gavias_sliderlayer
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

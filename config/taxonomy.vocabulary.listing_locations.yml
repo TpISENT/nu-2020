@@ -1,0 +1,8 @@
+uuid: 4830ce55-cf5e-40e2-81d6-6e4bab86024d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Listing Locations'
+vid: listing_locations
+description: ''
+weight: 0

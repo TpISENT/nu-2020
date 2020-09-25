@@ -1,0 +1,21 @@
+uuid: d9383335-80e5-4787-986c-1db867c7f02c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_order
+    - node.type.team
+  module:
+    - options
+id: node.team.field_display_order
+field_name: field_display_order
+entity_type: node
+bundle: team
+label: 'Display Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

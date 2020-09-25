@@ -1,0 +1,14 @@
+uuid: 2329647a-ffbd-4483-9b25-52203417c5ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.creater
+  module:
+    - user
+id: user_remove_role_action.creater
+label: 'Remove the Creater role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: creater

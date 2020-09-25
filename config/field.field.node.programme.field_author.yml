@@ -1,0 +1,25 @@
+uuid: caf1bc54-a574-4b4a-96e6-6791af7508a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.programme
+id: node.programme.field_author
+field_name: field_author
+entity_type: node
+bundle: programme
+label: Dean
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference_views
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

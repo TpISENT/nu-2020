@@ -1,0 +1,8 @@
+uuid: b4800e70-772d-45b6-b48f-595c685264a9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Listing Tags'
+vid: listing_tags
+description: ''
+weight: 0

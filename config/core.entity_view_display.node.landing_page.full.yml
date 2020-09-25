@@ -1,0 +1,110 @@
+uuid: e42e909e-1679-4376-973b-73fe2c6cb5f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_campus
+    - field.field.node.landing_page.field_department
+    - field.field.node.landing_page.field_education_level
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_navigation
+    - field.field.node.landing_page.field_school
+    - field.field.node.landing_page.field_seo_description
+    - field.field.node.landing_page.layout_builder__layout
+    - field.field.node.landing_page.layout_selection
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - layout_library
+    - metatag
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          965cfe7c-715a-496a-afbd-6c7ece46d3fc:
+            uuid: 965cfe7c-715a-496a-afbd-6c7ece46d3fc
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:body'
+              label: Description
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  layout_library:
+    enable: true
+  layout_builder_restrictions:
+    entity_view_mode_restriction:
+      whitelisted_blocks:
+        'Content fields':
+          - 'field_block:node:landing_page:uid'
+          - 'field_block:node:landing_page:created'
+          - 'field_block:node:landing_page:field_campus'
+          - 'field_block:node:landing_page:field_department'
+          - 'field_block:node:landing_page:body'
+          - 'field_block:node:landing_page:field_education_level'
+          - 'field_block:node:landing_page:field_school'
+          - 'field_block:node:landing_page:field_seo_description'
+          - 'field_block:node:landing_page:title'
+        Help: {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        'Moderation Dashboard': {  }
+        System:
+          - system_breadcrumb_block
+        User: {  }
+        Views: {  }
+        core:
+          - page_title_block
+      allowed_layouts:
+        - layout_onecol
+        - layout_twocol_section
+        - layout_threecol_section
+        - layout_fourcol_section
+      blacklisted_blocks: {  }
+    allowed_block_categories: {  }
+_core:
+  default_config_hash: d83Jic-g8eE88n6hk6kgqfzNI0Y-gEnPXKI5qed2hc0
+id: node.landing_page.full
+targetEntityType: node
+bundle: landing_page
+mode: full
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    region: content
+    label: hidden
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_campus: true
+  field_department: true
+  field_education_level: true
+  field_navigation: true
+  field_school: true
+  field_seo_description: true
+  layout_builder__layout: true
+  layout_selection: true
+  links: true

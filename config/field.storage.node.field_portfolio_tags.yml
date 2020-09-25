@@ -1,0 +1,20 @@
+uuid: 83f90f25-fa9e-4384-aad5-9f86555f74e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_portfolio_tags
+field_name: field_portfolio_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
