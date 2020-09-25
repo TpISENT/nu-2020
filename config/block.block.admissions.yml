@@ -1,0 +1,34 @@
+uuid: bd68a48c-22a1-4716-ada2-e27495e374ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admissions
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: admissions
+theme: tp_basetheme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:admissions'
+settings:
+  id: 'system_menu_block:admissions'
+  label: Admissions
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

@@ -1,0 +1,8 @@
+uuid: 0eb132ee-a157-40cb-8a00-7ccc3c982667
+langcode: en
+status: true
+dependencies: {  }
+id: academics
+label: Academics
+description: ''
+locked: false

@@ -13,22 +13,22 @@ favicon:
 theme_skin: ''
 enable_customize: '0'
 map_source: mapbox
-map_center_latitude: ''
-map_center_longitude: ''
+map_center_latitude: '7.9592439'
+map_center_longitude: '-11.7386445'
 map_zoom: '13'
 mapbox_access_token: ''
 mapbox_id_style: mapbox.light
-google_key: ''
+google_key: AIzaSyDAeqMehCYUNI-lbAk85EvnnscQI5ROe8M
 google_map_style: ''
-listing_search_action: 'Apply Only'
-sticky_menu: '1'
+listing_search_action: 'Apply Online'
+sticky_menu: '0'
 site_layout: boxed
-preloader: '0'
+preloader: '1'
 default_header: header
-hide_header_button_link: hide
+hide_header_button_link: show
 header_button_link: 'https://app.njala.edu.sl'
 footer_first_size: '3'
 footer_second_size: '3'
 footer_third_size: '3'
 footer_four_size: '3'
-customize_css: ''
+customize_css: ".dates-calendardate {\r\n    background: #002147;\r\n    color: #fff;\r\n    float: left;\r\n    line-height: 2;\r\n    margin-top: 5px;\r\n    margin-right: 1em;\r\n    padding: .25em .5em;\r\n    text-align: center;\r\n    text-transform: uppercase;\r\n    width: 3.75em;\r\n}\r\n.dates-calendardate {\r\n    color: #fff;\r\n    line-height: 2;\r\n    text-align: center;\r\n    text-transform: uppercase;\r\n}\r\n.date-calendardate-day {\r\n    display: block;\r\n    font-size: 1.313em;\r\n    letter-spacing: 2px;\r\n}\r\n.date-calendardate-month {\r\n    display: block;\r\n    font-size: 0.813em;\r\n}\r\n"

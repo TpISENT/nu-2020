@@ -1,3 +1,4 @@
+
 <header id="header" class="header-v1">
 
   {% set class_sticky = '' %}
@@ -42,9 +43,9 @@
                           {% if gva_theme_setting('hide_header_button_link') != 'hide' %}
                             <div class="header-button">
                               {% if custom_account %}
-                                <a href="{{ base_url }}{{ gva_theme_setting('header_button_link') }} ">{{'+ Add Listing'|t}}</a>
+                                <a href="{{ gva_theme_setting('header_button_link') }} ">{{'Apply Online'|t}}</a>
                               {% else %}
-                                <a href="{{ path('user.login') }}">{{'+ Add Listing'|t}}</a>
+                                <a href="https://app.njala.edu.sl">{{'Apply Online'|t}}</a>
                               {% endif %}
                             </div>
                           {% endif %} 
@@ -63,12 +64,12 @@
                               {% endif %}  
                               <ul class="user-links">
                                 {% if custom_account %}
-                                  <li><a href="{{ base_url }}{{ gva_theme_setting('header_button_link') }} ">{{'+ Add Listing'|t}}</a></li>
+                                  <li><a href="{{ gva_theme_setting('header_button_link') }} ">{{'Apply Online'|t}}</a></li>
                                   <li><a href="{{ path('user.page') }}">{{ '+ My Account'|t }}</a></li>
                                   <li><a href="{{ path('user.logout') }}">{{ '+ Logout'|t }}</a></li>
                                 {% else %}
                                   <li><a href="{{ path('user.login') }}">{{ '+ Login'|t }}</a></li>
-                                  <li><a href="{{ path('user.register') }}">{{ '+ Register'|t }}</a></li>
+                                  
                                 {% endif %}  
                               </ul>
                             </div>  

@@ -1,0 +1,38 @@
+uuid: e01b933c-247a-4a9d-8f36-d75166dd6465
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.academics
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+    - views
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__academics_block_all_centres
+theme: tp_basetheme
+region: content_top
+weight: -8
+provider: null
+plugin: 'views_block:academics-block_all_centres'
+settings:
+  id: 'views_block:academics-block_all_centres'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    pages: "/node/100\r\n/academics/centres"
+    negate: false

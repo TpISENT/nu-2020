@@ -1,28 +1,27 @@
-uuid: 0b02f16a-e7b7-45df-8f1c-d640629c752a
+uuid: 93d781fd-07f5-4702-86a4-004922a87995
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:b06f6cd8-3ce6-44fa-96c4-1459712a45fc'
+    - 'block_content:basic:3c7fdb6a-0b0a-4f02-89f6-7e1c720e4427'
   module:
     - block_content
     - block_visibility_groups
     - gaviasthemer
-    - system
   theme:
     - tp_basetheme
 third_party_settings:
   gaviasthemer:
     classes: ''
-id: latestnewsheading
+id: topbar
 theme: tp_basetheme
-region: sidebar_right
-weight: -6
+region: topbar
+weight: 0
 provider: null
-plugin: 'block_content:b06f6cd8-3ce6-44fa-96c4-1459712a45fc'
+plugin: 'block_content:3c7fdb6a-0b0a-4f02-89f6-7e1c720e4427'
 settings:
-  id: 'block_content:b06f6cd8-3ce6-44fa-96c4-1459712a45fc'
-  label: 'Latest news heading'
+  id: 'block_content:3c7fdb6a-0b0a-4f02-89f6-7e1c720e4427'
+  label: Topbar
   provider: block_content
   label_display: '0'
   status: true
@@ -33,7 +32,3 @@ visibility:
     id: condition_group
     negate: false
     block_visibility_group: ''
-  request_path:
-    id: request_path
-    pages: "/news-and-events\r\n/news-and-events/*"
-    negate: false

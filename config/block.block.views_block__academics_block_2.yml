@@ -1,0 +1,38 @@
+uuid: 7542f994-6236-4657-b970-3774fb1225d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.academics
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+    - views
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__academics_block_2
+theme: tp_basetheme
+region: sidebar_left
+weight: -10
+provider: null
+plugin: 'views_block:academics-block_2'
+settings:
+  id: 'views_block:academics-block_2'
+  label: Departments
+  provider: views
+  label_display: visible
+  views_label: Departments
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    pages: /node/96
+    negate: false

@@ -1,0 +1,29 @@
+uuid: 195beb74-4c94-4fc1-9f58-5cf0d2f610cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navigation
+    - node.type.article
+    - taxonomy.vocabulary.navigation
+id: node.article.field_navigation
+field_name: field_navigation
+entity_type: node
+bundle: article
+label: Navigation
+description: 'This is a required field. Its used to dynamically set the URL path of the page'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      navigation: navigation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

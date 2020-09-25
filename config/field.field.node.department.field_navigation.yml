@@ -11,7 +11,7 @@ field_name: field_navigation
 entity_type: node
 bundle: department
 label: Navigation
-description: ''
+description: 'This is a required field. Its used to dynamically set the URL path of the page'
 required: true
 translatable: true
 default_value: {  }

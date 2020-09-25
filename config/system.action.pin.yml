@@ -1,0 +1,13 @@
+uuid: 629d1196-1ea8-43ab-a7a5-b38f0547ae0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - moderated_content_bulk_publish
+_core:
+  default_config_hash: RuV7UGCcdca_HDuhjgewBJQo86jKez9d1356wDWA8XY
+id: pin
+label: 'Pin Content'
+type: node
+plugin: pin_content_action
+configuration: {  }

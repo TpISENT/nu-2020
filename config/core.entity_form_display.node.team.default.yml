@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.team.field_education_level
     - field.field.node.team.field_faculty_type
     - field.field.node.team.field_meta_tags
+    - field.field.node.team.field_navigation
     - field.field.node.team.field_seo_description
     - field.field.node.team.field_team_contact
     - field.field.node.team.field_team_description
@@ -94,6 +95,16 @@ content:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_navigation:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_seo_description:
     weight: 1

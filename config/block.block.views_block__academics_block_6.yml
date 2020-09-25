@@ -1,0 +1,38 @@
+uuid: 778a1293-6616-4003-8caa-d69c92691446
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.academics
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+    - views
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__academics_block_6
+theme: tp_basetheme
+region: sidebar_left
+weight: 0
+provider: null
+plugin: 'views_block:academics-block_6'
+settings:
+  id: 'views_block:academics-block_6'
+  label: 'All Natural Resources Management Departments'
+  provider: views
+  label_display: visible
+  views_label: 'All Natural Resources Management Departments'
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    pages: /node/92
+    negate: false

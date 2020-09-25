@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.event.field_event_map
     - field.field.node.event.field_event_start
     - field.field.node.event.field_event_time
+    - field.field.node.event.field_navigation
+    - field.field.node.event.field_seo_description
     - image.style.small
     - node.type.event
   module:
@@ -71,3 +73,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_event_map: true
+  field_navigation: true
+  field_seo_description: true

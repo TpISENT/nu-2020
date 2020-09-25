@@ -1,0 +1,34 @@
+uuid: 78157228-792d-4970-b302-b335b21cf78d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.academics
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: academics
+theme: tp_basetheme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:academics'
+settings:
+  id: 'system_menu_block:academics'
+  label: Academics
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

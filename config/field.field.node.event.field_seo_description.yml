@@ -1,0 +1,19 @@
+uuid: 73d4333b-a90d-4cfa-ac9d-4f1025b21265
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_description
+    - node.type.event
+id: node.event.field_seo_description
+field_name: field_seo_description
+entity_type: node
+bundle: event
+label: 'SEO Description'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

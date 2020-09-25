@@ -602,10 +602,13 @@ display:
       path: programmes/glossary
       menu:
         type: normal
-        title: Glossary
-        weight: 0
+        title: 'Programmes Glossary'
+        weight: -78
         menu_name: main
-        parent: ''
+        parent: 'menu_link_content:7911aa67-f447-4fd2-93d8-55dfd81cc00d'
+        enabled: true
+        description: ''
+        expanded: false
       display_extenders: {  }
       arguments:
         title:

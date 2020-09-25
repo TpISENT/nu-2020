@@ -1,0 +1,35 @@
+uuid: c30a6929-08a4-46c1-9e03-16bef495685e
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__nu_blog_block_3
+theme: tp_basetheme
+region: highlighted
+weight: -9
+provider: null
+plugin: 'views_block:nu_blog-block_3'
+settings:
+  id: 'views_block:nu_blog-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_navigation
     - field.field.node.article.field_post_category
     - field.field.node.article.field_post_embed
     - field.field.node.article.field_post_format
@@ -65,6 +66,7 @@ content:
     third_party_settings: {  }
 hidden:
   comment: true
+  field_navigation: true
   field_post_embed: true
   field_post_format: true
   field_post_gallery: true

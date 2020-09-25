@@ -3,10 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.article
+    - node.type.banner
     - node.type.course
     - node.type.department
+    - node.type.event
     - node.type.forms_and_publications
+    - node.type.gallery
+    - node.type.landing_page
+    - node.type.listing
+    - node.type.page
+    - node.type.portfolio
     - node.type.programme
+    - node.type.simplenews_issue
+    - node.type.team
+    - node.type.testimonial
   module:
     - content_moderation
 _core:
@@ -66,8 +77,19 @@ type_settings:
         - published
   entity_types:
     node:
+      - article
+      - banner
       - course
       - department
+      - event
       - forms_and_publications
+      - gallery
+      - landing_page
+      - listing
+      - page
+      - portfolio
       - programme
+      - simplenews_issue
+      - team
+      - testimonial
   default_moderation_state: draft

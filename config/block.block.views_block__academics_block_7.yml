@@ -1,9 +1,9 @@
-uuid: ae337801-d8e4-4f0a-ba3c-327dff5272f9
+uuid: a978ea27-2e99-4cb9-a9cf-e8adf247199d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.nu_blog
+    - views.view.academics
   module:
     - block_visibility_groups
     - gaviasthemer
@@ -14,18 +14,18 @@ dependencies:
 third_party_settings:
   gaviasthemer:
     classes: ''
-id: views_block__nu_blog_block_2
+id: views_block__academics_block_7
 theme: tp_basetheme
-region: sidebar_right
-weight: -5
+region: sidebar_left
+weight: 0
 provider: null
-plugin: 'views_block:nu_blog-block_2'
+plugin: 'views_block:academics-block_7'
 settings:
-  id: 'views_block:nu_blog-block_2'
-  label: ''
+  id: 'views_block:academics-block_7'
+  label: 'All Technology Departments'
   provider: views
-  label_display: '0'
-  views_label: ''
+  label_display: visible
+  views_label: 'All Technology Departments'
   items_per_page: none
 visibility:
   condition_group:
@@ -34,5 +34,5 @@ visibility:
     block_visibility_group: ''
   request_path:
     id: request_path
-    pages: "/news-and-events\r\n/news-and-events/*"
+    pages: /node/91
     negate: false

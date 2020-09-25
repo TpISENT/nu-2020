@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.team.field_education_level
     - field.field.node.team.field_faculty_type
     - field.field.node.team.field_meta_tags
+    - field.field.node.team.field_navigation
     - field.field.node.team.field_seo_description
     - field.field.node.team.field_team_contact
     - field.field.node.team.field_team_description
@@ -89,6 +90,7 @@ hidden:
   field_education_level: true
   field_faculty_type: true
   field_meta_tags: true
+  field_navigation: true
   field_seo_description: true
   field_team_contact: true
   field_team_description: true

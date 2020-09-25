@@ -1,14 +1,11 @@
 uuid: 604d2cc1-158a-4fbf-a9d2-3838a00aad08
 langcode: en
-status: true
+status: false
 dependencies:
-  config:
-    - views.view.nu_blog
   module:
     - block_visibility_groups
     - gaviasthemer
     - system
-    - views
   theme:
     - tp_basetheme
 third_party_settings:
@@ -16,8 +13,8 @@ third_party_settings:
     classes: ''
 id: views_block__nu_blog_block_1
 theme: tp_basetheme
-region: before_content
-weight: 0
+region: content_top
+weight: -9
 provider: null
 plugin: 'views_block:nu_blog-block_1'
 settings:

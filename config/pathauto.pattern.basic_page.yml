@@ -1,0 +1,31 @@
+uuid: 88640572-882b-46d7-91ad-6256175d3d90
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 8aTzJfhfIZ2Twd4_TsRkj1OcwgrlV-GtbGmNGRqAv_s
+id: basic_page
+label: 'Basic Page'
+type: 'canonical_entities:node'
+pattern: '[node:field_navigation]/[node:title]'
+selection_criteria:
+  4fbc5fcf-1b2b-4bfa-87bf-646d0f20f81c:
+    id: node_type
+    bundles:
+      article: article
+      course: course
+      department: department
+      event: event
+      forms_and_publications: forms_and_publications
+      page: page
+      programme: programme
+      team: team
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4fbc5fcf-1b2b-4bfa-87bf-646d0f20f81c
+selection_logic: and
+weight: -5
+relationships: {  }

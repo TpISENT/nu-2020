@@ -1,0 +1,38 @@
+uuid: 4af731d5-36de-419e-9aef-035a48c27434
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: mainnavigation_2
+theme: tp_basetheme
+region: sidebar_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 2
+  depth: 0
+  expand_all_items: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/news-and-events/news\r\n/news-and-events/events\r\n/news-and-events\r\n/programmes/glossary\r\n/form/contact"
+    negate: true

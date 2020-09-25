@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.course.body
+    - field.field.node.course.field_navigation
+    - field.field.node.course.field_seo_description
     - node.type.course
   module:
     - text
@@ -29,3 +31,5 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_navigation: true
+  field_seo_description: true

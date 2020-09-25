@@ -1,0 +1,8 @@
+uuid: 95339519-3493-403e-922a-c0c410df6868
+langcode: en
+status: true
+dependencies: {  }
+id: nu_date
+label: 'NU Date'
+locked: false
+pattern: 'l, F j, Y'

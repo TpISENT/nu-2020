@@ -1,0 +1,38 @@
+uuid: 31a00379-f763-4c58-aa41-b068a5fbf1f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.academics
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+    - views
+  theme:
+    - tp_basetheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__academics_block_3
+theme: tp_basetheme
+region: sidebar_left
+weight: 0
+provider: null
+plugin: 'views_block:academics-block_3'
+settings:
+  id: 'views_block:academics-block_3'
+  label: 'All Environmental Sciences Departments'
+  provider: views
+  label_display: visible
+  views_label: 'All Environmental Sciences Departments'
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    pages: /node/93
+    negate: false

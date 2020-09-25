@@ -1,0 +1,33 @@
+uuid: 42c977dc-ffa2-4238-b1fe-5b6c9123dd70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navigation
+    - node.type.team
+    - taxonomy.vocabulary.navigation
+  content:
+    - 'taxonomy_term:navigation:cbe8baea-ad84-47d7-9950-2a367c329398'
+id: node.team.field_navigation
+field_name: field_navigation
+entity_type: node
+bundle: team
+label: Navigation
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: cbe8baea-ad84-47d7-9950-2a367c329398
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      navigation: navigation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
